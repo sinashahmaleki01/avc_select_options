@@ -103,4 +103,8 @@ ul {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-
+.selected-list li:hover {
+  background-color: #e2ecf5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: #2f3640;
+}

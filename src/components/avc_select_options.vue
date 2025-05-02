@@ -9,7 +9,7 @@
 
       <transition name="slide">
         <ul v-show="isOpen" class="list-container">
-          <li v-for="(item, index) in list_options" @click="change_select(item)">{{ item }}</li>
+          <li v-for="(item, index) in options" @click="change_select(item)">{{ item }}</li>
         </ul>
       </transition>
     </div>
@@ -22,19 +22,11 @@
 </template>
 <script>
 export default {
+  props: {
+    options : Array,
+  },
   data() {
     return {
-      list_options: [
-        "Mac Computers",
-        "Wearables and Accessories",
-        "AirPods & Audio Products",
-        "iCloud & iCloud+",
-        "Apple Pay & Apple Card",
-        "Apple Fitness+",
-        "Magic Keyboard, Magic Mouse",
-        "Apple TV HD (Discontinued)",
-
-      ],
       selectedItems: [],
       isOpen: false,
 
