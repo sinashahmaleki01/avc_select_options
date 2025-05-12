@@ -8,8 +8,8 @@ ul {
 
 }
 
-.container {
-  max-width: 1000px;
+.avc_select_options {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 40px;
-
+  z-index: 1;
 }
 
 .costumSelect .list-container li {
@@ -83,15 +83,15 @@ ul {
   max-height: 320px;
 }
 
-.container .selected-list {
-  margin-top: 330px;
+.avc_select_options .selected-list {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   padding: 10px;
 }
 
-.container .selected-list li {
+.avc_select_options .selected-list li {
   background-color: #2f3640;
   color: #f5f6fa;
   padding: 8px 12px;

@@ -1,6 +1,6 @@
 <template>
 
-  <div class="container">
+  <div class="avc_select_options">
     <div class="costumSelect">
       <div class="selectedLi" @click="toggleList">
         <div>{{ selectedItems[selectedItems.length - 1] || 'select an option' }}</div>
